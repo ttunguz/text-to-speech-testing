@@ -61,7 +61,8 @@ def generate_rime_batch(words_batch, api_key, batch_num):
         "speaker": "abbie",    # American female voice
         "text": text,
         "lang": "eng",         # English language
-        "audioFormat": "mp3"   # Audio format
+        "audioFormat": "mp3",  # Audio format
+        "modelId": "mistv2"    # Use latest mistv2 model (Feb 2025)
     }
 
     print(f"Batch {batch_num}: {len(words_batch)} words, {len(text)} chars")

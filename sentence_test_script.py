@@ -116,7 +116,8 @@ def generate_rime_sentences(sentences, api_key):
             "speaker": "abbie",
             "text": sentence,
             "lang": "eng",
-            "audioFormat": "mp3"
+            "audioFormat": "mp3",
+            "modelId": "mistv2"    # Use latest mistv2 model (Feb 2025)
         }
 
         print(f"Generating sentence {i}/{len(sentences)} ({len(sentence)} chars)")

@@ -50,7 +50,8 @@ def generate_rime_audio(text, output_file):
             "speaker": "abbie",    # American female voice
             "text": text,
             "lang": "eng",         # English language
-            "audioFormat": "mp3"   # Audio format
+            "audioFormat": "mp3",  # Audio format
+            "modelId": "mistv2"    # Use latest mistv2 model (Feb 2025)
         }
 
         print("Sending request to RIME.ai...")

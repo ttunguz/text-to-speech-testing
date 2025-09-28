@@ -29,14 +29,16 @@ This project tests the claim that RIME.ai provides superior pronunciation of dif
 
 - **`rime_tts.py`**: Basic RIME.ai implementation (limited to 25 words due to 500-char API limit)
   - Voice: Abbie (American female)
-  - Model: mist (default)
+  - Model: mistv2 (February 2025 - enhanced pronunciation)
 
 - **`rime_full_simple.py`**: Complete RIME.ai implementation with batching
   - Processes all 46 words in batches under 400 characters
   - Uses ffmpeg for audio concatenation
   - Handles RIME's 500-character API limit
+  - Model: mistv2 (February 2025 - enhanced pronunciation)
 
 - **`rime_full_tts.py`**: Alternative RIME implementation using pydub (Python 3.13 compatibility issues)
+  - Model: mistv2 (February 2025 - enhanced pronunciation)
 
 ### Conversational Testing
 

@@ -37,9 +37,6 @@ This project tests the claim that RIME.ai provides superior pronunciation of dif
   - Handles RIME's 500-character API limit
   - Model: mistv2 (February 2025 - enhanced pronunciation)
 
-- **`rime_full_tts.py`**: Alternative RIME implementation using pydub (Python 3.13 compatibility issues)
-  - Model: mistv2 (February 2025 - enhanced pronunciation)
-
 ### Conversational Testing
 
 - **`sentence_test_script.py`**: Generates natural sentences using brand names
@@ -117,7 +114,6 @@ text_to_speech_testing/
 ├── elevenlabs_tts.py              # ElevenLabs word testing
 ├── rime_tts.py                    # Basic RIME implementation
 ├── rime_full_simple.py            # Complete RIME with batching
-├── rime_full_tts.py               # Alternative RIME (pydub version)
 ├── sentence_test_script.py        # Conversational sentence testing
 └── .gitignore                     # Excludes API keys & large audio files
 ```

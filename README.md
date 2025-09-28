@@ -9,6 +9,18 @@ This project tests the claim that RIME.ai provides superior pronunciation of dif
 1. **46 challenging commercial words** across 5 categories
 2. **18 natural conversational sentences** incorporating these brand names
 
+## Quick Start
+
+**Immediate Testing (No API Keys Required):**
+1. Clone this repository
+2. Open the included MP3 files in any audio player
+3. Compare pronunciation quality between ElevenLabs and RIME mistv2
+
+**Generate New Audio:**
+1. Set API keys in environment variables
+2. Run the Python scripts to generate fresh audio files
+3. Compare results with included samples
+
 ## Test Categories
 
 - **Food & Beverage**: Haagen-Dazs, Acai, Chipotle, Nutella, La Croix, Ghirardelli, Worcestershire, Sriracha, Quinoa
@@ -110,17 +122,28 @@ Open in QuickTime Player or any audio player to compare pronunciation quality.
 ```
 text_to_speech_testing/
 ├── README.md
-├── test_words.txt                  # Master list of 46 challenging words
-├── elevenlabs_tts.py              # ElevenLabs word testing
-├── rime_tts.py                    # Basic RIME implementation
-├── rime_full.py                   # Complete RIME with batching
-├── sentence_test_script.py        # Conversational sentence testing
-└── .gitignore                     # Excludes API keys & large audio files
+├── comparison_report.txt          # Detailed test configuration & methodology
+├── test_words.txt                 # Master list of 46 challenging words
+├── pyproject.toml                 # Python project configuration
+├── .gitignore                     # Excludes API keys & temp files
+│
+├── Scripts/
+│   ├── elevenlabs_tts.py          # ElevenLabs word testing
+│   ├── rime_tts.py                # Basic RIME implementation (25 words)
+│   ├── rime_full.py               # Complete RIME with batching (46 words)
+│   └── sentence_test_script.py    # Conversational sentence testing
+│
+└── Audio Samples/
+    ├── elevenlabs_all_words.mp3   # ElevenLabs: 46 words (634 KB)
+    ├── elevenlabs_sentences.mp3   # ElevenLabs: 18 sentences (1.8 MB)
+    ├── rime_all_words_full.mp3    # RIME mistv2: 46 words (174 KB)
+    └── rime_sentences.mp3         # RIME mistv2: 18 sentences (583 KB)
 ```
 
 ## Notes
 
-- Audio files (.mp3) are excluded from git due to size
-- API keys are never committed to version control
-- RIME.ai's 500-character limit requires careful text batching
-- Both APIs use American female voices for fair comparison
+- **Sample audio files included** for immediate testing without API keys
+- **API keys never committed** to version control (.gitignore protection)
+- **RIME.ai batching** handles 500-character API limit automatically
+- **Voice consistency** - Both APIs use American female voices for fair comparison
+- **mistv2 model** provides enhanced pronunciation for challenging commercial terms

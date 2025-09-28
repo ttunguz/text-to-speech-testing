@@ -31,7 +31,7 @@ This project tests the claim that RIME.ai provides superior pronunciation of dif
   - Voice: Abbie (American female)
   - Model: mistv2 (February 2025 - enhanced pronunciation)
 
-- **`rime_full_simple.py`**: Complete RIME.ai implementation with batching
+- **`rime_full.py`**: Complete RIME.ai implementation with batching
   - Processes all 46 words in batches under 400 characters
   - Uses ffmpeg for audio concatenation
   - Handles RIME's 500-character API limit
@@ -68,7 +68,7 @@ export RIME_API_KEY="your_rime_key"
 ```bash
 # Test individual words
 python elevenlabs_tts.py          # Generates: elevenlabs_all_words.mp3
-python rime_full_simple.py        # Generates: rime_all_words_full.mp3
+python rime_full.py               # Generates: rime_all_words_full.mp3
 
 # Test conversational sentences
 python sentence_test_script.py    # Generates: elevenlabs_sentences.mp3 & rime_sentences.mp3
@@ -113,7 +113,7 @@ text_to_speech_testing/
 ├── test_words.txt                  # Master list of 46 challenging words
 ├── elevenlabs_tts.py              # ElevenLabs word testing
 ├── rime_tts.py                    # Basic RIME implementation
-├── rime_full_simple.py            # Complete RIME with batching
+├── rime_full.py                   # Complete RIME with batching
 ├── sentence_test_script.py        # Conversational sentence testing
 └── .gitignore                     # Excludes API keys & large audio files
 ```

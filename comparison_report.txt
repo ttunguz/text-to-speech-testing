@@ -1,0 +1,54 @@
+TTS COMPARISON REPORT - ElevenLabs vs RIME.ai
+================================================
+
+Generated: September 27, 2025
+
+## Test Configuration
+
+**Test Words**: 46 challenging commercial terms including:
+- Food brands: Häagen-Dazs, Açaí, Chipotle, Nutella, La Croix, etc.
+- Tech brands: Huawei, Xiaomi, PostgreSQL, Kubernetes, etc.
+- Fashion brands: Hermès, Givenchy, Versace, Yves Saint Laurent, etc.
+- Auto brands: Porsche, Peugeot, Koenigsegg, etc.
+- Pharma brands: Pfizer, Ozempic, Humira, etc.
+
+## Generated Files
+
+### ElevenLabs
+- **File**: elevenlabs_all_words.mp3
+- **Size**: 0.94 MB (959,261 bytes)
+- **Voice**: Rachel (American female)
+- **Model**: eleven_multilingual_v2
+- **Format**: Numbered list with pauses ("1. Häagen-Dazs... 2. Açaí...")
+- **Character Count**: 712 characters
+
+### RIME.ai
+- **File**: rime_all_words.mp3
+- **Size**: 0.15 MB (150,727 bytes)
+- **Voice**: Abbie (American female)
+- **Model**: Mist (default)
+- **Format**: Comma-separated list (first 25 words only)
+- **Character Count**: 248 characters
+
+## Key Differences
+
+1. **File Size**: ElevenLabs ~6x larger than RIME
+2. **Content**: ElevenLabs includes all 46 words, RIME only first 25 (due to 500 char API limit)
+3. **Format**: ElevenLabs uses numbered format, RIME uses comma-separated
+4. **Voice Quality**: Both use American female voices for comparison
+
+## Testing Instructions
+
+1. Play both files side-by-side
+2. Focus on pronunciation of challenging words like:
+   - Häagen-Dazs, Açaí, Worcestershire
+   - Huawei, Xiaomi, PostgreSQL
+   - Hermès, Givenchy, Yves Saint Laurent
+   - Porsche, Peugeot, Citroën
+3. Evaluate RIME's claimed superiority with commercial/trademark terms
+
+## Notes
+
+- RIME API has 500 character limit, requiring shorter test
+- Celeste voice (RIME) requires Arcana model (not available on current plan)
+- Both services successfully handled special characters (accents, umlauts, etc.)

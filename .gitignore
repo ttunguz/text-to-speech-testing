@@ -2,8 +2,8 @@
 .env
 *.key
 
-# Audio files (too large for git)
-*.mp3
+# Audio files - sample MP3s included for comparison
+# *.mp3  # Commented out to include sample files
 *.wav
 *.m4a
 
@@ -35,6 +35,8 @@ wheels/
 file_list.txt
 sentence_list.txt
 rime_batch_*.mp3
+rime_test.mp3
+rime_all_words.mp3  # Exclude old version, keep rime_all_words_full.mp3
 
 # IDE
 .vscode/
